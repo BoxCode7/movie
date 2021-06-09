@@ -1,0 +1,12 @@
+<view>
+  <view wx:for="{{dataList}}" wx:key="{{index}}">
+    <!-- <image src="{{item.cover}}" class="movie-img"></image> -->
+    <view>{{item.title}}</view>
+    <view>国家：{{item.region}}</view>
+    <view>导演：{{item.directors}}</view>
+    <view>演员：{{item.actors}}</view>
+    <view>评分：{{item.rate}}</view>
+    <view>时长{{item.duration}}</view>
+    <view>类型：{{item.types}}</view>
+  </view>
+</view>

@@ -1,0 +1,8 @@
+<view class="movie" wx:for="{{movieList}}" wx:key="{{index}}">
+  <image src="{{item.cover}}" class="movie-img"></image>
+  <view class="movie-info">
+    <view class="movie-title">{{item.title}}</view>
+    <view>评分：<text class="movie-rate">{{item.rate}}</text>分</view>
+    <button class="movi-comment" data-movieid="{{item.id}}" bindtap="gotoComment">评价</button>
+  </view>
+</view>
